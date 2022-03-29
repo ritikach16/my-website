@@ -1,0 +1,109 @@
+https://codepen.io/spark_c/pen/VwyPKQd?editors=1100
+
+<div class="frame">
+  <div class="center">
+		<div class="num">
+			<div class="one1"></div>
+			<div class="one2"></div>
+			<div class="zero1"></div>
+			<div class="zero2"></div>
+		</div>
+		<div class="days">DAYS</div>
+		<div class="challenge">CSS CHALLENGE</div>
+  </div>
+</div>
+
+
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Courier New', 'Courier', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	 background: linear-gradient(to top right, #711A75 0%, #FFBDE6 100%); 
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.num{
+	position: relative;
+	height: 100px;
+	width: 210px;
+
+
+.one1{
+	position: absolute;
+	top: 0px;
+	box-sizing: border-box;
+	border-radius: 6px;
+	background: white;
+	height: 46px;
+	width: 30px;
+	transform: rotate(54deg);
+	left: -19px;
+}
+.one2{
+	position: absolute;
+	box-sizing: border-box;
+	height: 100px;
+	background: white;
+	height: 100px;
+	width: 30px;
+	border-radius: 6px;
+	z-index: 12;
+	box-shadow: 0 0 12px 0 rgba(0,0,0,0.2);
+}
+
+.zero1, 
+.zero2{
+	position: absolute;
+	top: 0px;
+	z-index: 10;
+	border-radius: 50%;
+	border: 22px solid white;
+	left: 20px;
+	height: 100px;
+	width: 98px;
+	box-sizing: border-box;
+	box-shadow: 0 0 11px 0 rgba(0,0,0,0.3);
+}
+.zero2{
+	z-index: 8;
+	left: 97px;
+}
+}
+.days{
+	position: relative;
+	display: block;
+	z-index: 15;
+	font-weight: bold;
+	color: white;
+	font-size: 80px;
+	line-height: 75px;
+}
+
+.challenge{
+	box-sizing: border-box;
+	font-weight: bold;
+	color: white;
+	font-size: 24px;
+}
